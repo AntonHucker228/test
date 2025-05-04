@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 500px;
+}
+
+/* Стили для обложки */
+#cover {
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Отображать поверх всего */
+}
+
+#coverImage {
+    max-width: 90%;  /* Ограничиваем ширину картинки, чтобы не вылезала за края */
+    max-height: 70%; /* Ограничиваем высоту картинки */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: contain; /* Картинка помещается в контейнер с сохранением пропорций */
+}
+
+#playButton {
+    padding: 12px 24px;
+    background-color: #FFC107; /* Желтый цвет */
+    color: #333; /* Темно-серый текст */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#playButton:hover {
+    background-color: #FFA000; /* Более темный желтый цвет при наведении */
+}
+
+/* Стили для вопросов */
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: white; /* Белые кнопки */
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Закругленные углы */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+#answers button:hover {
+    background-color: #f0f0f0;
+}
+
+#answers button.selected {
+    background-color: #FFA000; /* Более темный желтый цвет */
+    color: #333;
+}
+
+#nextButton {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Закругленные углы */
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    margin-top: 20px;
+}
+
+#nextButton:hover {
+    background-color: #367c39;
+}
+
+/* ... предыдущие стили ... */
+
+#result img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
